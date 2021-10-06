@@ -6,13 +6,12 @@ const app = express();
 const port = 8042;
 const indexRouter = require('./routes/index');
 const carsRouter = require('./routes/cars');
-const carssite = require('/public/data/cars.html')
 
 
 app.use(express.static('public'));
 
 app.use('/', indexRouter);
-app.use('/cars', carssite);
+app.use('/cars', carsRouter);
 
 // app.get('/', (req, res) => {
 

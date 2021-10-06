@@ -1,5 +1,5 @@
 
-exports.pelikan = (x,y) => {
+exports.carlist = (x,y) => {
     // y.send('<b>u asked for car number 12.</b>');
-    y.sendfile('public/data/cars.js');
+    y.sendfile('public/data/cars.html');
 };
